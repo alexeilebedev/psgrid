@@ -1,6 +1,7 @@
 PostScript grid generator.
+Parameters are x,y and "mod". Every "mod" lines are shown in bold
 Usage:
-  ./grid 9 9 3 | lp
-  ./grid 100 100 10 | lp
+  ./psgrid 9 9 3 | lp
+  ./psgrid 100 100 10 | lp
   
   
