@@ -1,0 +1,6 @@
+PostScript grid generator.
+Usage:
+  ./grid 9 9 3 | lp
+  ./grid 100 100 10 | lp
+  
+  
