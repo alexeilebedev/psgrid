@@ -15,12 +15,10 @@ void gen_grid(int width, int height, int mod) {
   float xscale=(rightedge-margin*2)/(width+1.f);
   float yscale=(topedge-margin*4)/(height+2.f);// why 4??
   float scale=xscale < yscale ? xscale : yscale;
-  float fontsize = 0.5f; /* in cell units */
   printf("%%!PS-Adobe-3.0\n");
   printf("<< /PageSize [%f %f] >> setpagedevice\n",rightedge,topedge);
-  printf("%f %f translate\n",margin*2,margin*3); // why 3??
+  printf("%f %f translate\n",margin,margin*3); // why 3??
   printf("%f %f scale\n",scale,scale);
-  printf("/Times-Roman findfont %f scalefont setfont\n",fontsize);
   float boldwidth=0.02f;
   /* print the grid */
   for (int x=0; x<=width; x++) {
